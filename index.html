@@ -168,7 +168,40 @@
   </div>
 </section>
 
-      
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Framework</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <img src="static/images/framework.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+          Overview of our proposed HiCRISP framework. The user first sends a task in natural language, which is broken down by LLM into multiple sub-tasks. The planner, which leverages the semantic understanding capabilities of LLM, generates a sequence of reference actions. Translation module, furthermore, translates actions into the low level control sentences which the robot can executes easily. Perception detects environment information and judges whether the system state changes. If failure is detected, corrector generate correction actions in order to fix error.
+        </h2>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Feedback Structure</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <img src="static/images/FeedbackStructure.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+          Illustration of feedback stack structure. The corrector learns the error action and error information from the top of the stack, and then determines the appropriate action to fix the error. If the fixing error action cannot be successfully executed, it is added as a new item to the Fix Action stack. Otherwise, the error action at the top of the stack is attempted, with the goal of removing it from the stack.
+        </h2>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">

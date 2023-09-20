@@ -192,16 +192,30 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+      <h2 class="title is-3">Experiments</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/VH1_init.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+          HiCRISP demonstrates superior performance in a VH simulator when compared to ProgPrompt.
+        </h2>
       </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/GazeboPanda_simulation.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+          HiCRISP acts in Gazebo Engine.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/GazeboCar_simulation_init.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         HiCRISP operates on both the Gazebo engine and real-world AGV platform. We command the vehicle to sequentially approach specific landmarks according to a predetermined order. Action failure arises when obstacles obstruct the intended trajectory. Planning failure occur if the vehicle erroneously navigates towards an incorrect landmark. HiCRISP addresses these failures by providing corresponding corrective actions and rectifying the issues.
+        </h2>
+     </div>
+  </div>
     </div>
   </div>
 </section>

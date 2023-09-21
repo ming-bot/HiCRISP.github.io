@@ -119,9 +119,9 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" style="display: block; margin-left: auto; margin-right: auto;">
         <!-- Your video here -->
         <source src="static/videos/9-19.mp4"
         type="video/mp4">
@@ -166,29 +166,31 @@
   </div>
 </section>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Methodology/Framework</h2>
+      
+        <img src="static/images/framework.jpg" alt="Framework Picture" width="80%" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+          Overview of our proposed HiCRISP framework. The user first sends a task in natural language, which is broken down by LLM into multiple sub-tasks. The planner, which leverages the semantic understanding capabilities of LLM, generates a sequence of reference actions. Translation module, furthermore, translates actions into the low level control sentences which the robot can executes easily. Perception detects environment information and judges whether the system state changes. If failure is detected, corrector generate correction actions in order to fix error.
+        </h2>
+
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-    <h2 class="title is-3">Methodology</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
+    <h2 class="title is-3">Methodology/Feedback Structure</h2>
         <!-- Your image here -->
-        <img src="static/images/framework.jpg" alt="Framework Picture"/>
-        <h2 class="subtitle has-text-left">
-          Overview of our proposed HiCRISP framework. The user first sends a task in natural language, which is broken down by LLM into multiple sub-tasks. The planner, which leverages the semantic understanding capabilities of LLM, generates a sequence of reference actions. Translation module, furthermore, translates actions into the low level control sentences which the robot can executes easily. Perception detects environment information and judges whether the system state changes. If failure is detected, corrector generate correction actions in order to fix error.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/FeedbackStructure.png" alt="Feedback Structure Picture" width="80%"/>
+        <img src="static/images/FeedbackStructure.png" alt="Feedback Structure Picture" width="80%" style="display: block; margin-left: auto; margin-right: auto;"/>
         <h2 class="subtitle has-text-left">
          Illustration of feedback stack structure. The corrector learns the error action and error information from the top of the stack, and then determines the appropriate action to fix the error. If the fixing error action cannot be successfully executed, it is added as a new item to the Fix Action stack. Otherwise, the error action at the top of the stack is attempted, with the goal of removing it from the stack.
        </h2>
-     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
@@ -203,21 +205,21 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/VH.png" alt="VirtualHome simulation" width="85%"/>
+        <img src="static/images/VH.png" alt="VirtualHome simulation" width="85%" style="display: block; margin-left: auto; margin-right: auto;"/>
         <h2 class="subtitle has-text-centered">
           HiCRISP demonstrates superior performance in a VirtualHome simulator when compared to ProgPrompt.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/GazeboPanda_simulation.png" alt="Gazebo Panda" width="90%" />
+        <img src="static/images/GazeboPanda_simulation.png" alt="Gazebo Panda" width="100%" style="display: block; margin-left: auto; margin-right: auto;"/>
         <h2 class="subtitle has-text-centered">
           HiCRISP acts in Gazebo Engine.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/GazeboCar_simulation_init.png" alt="Gazebo AGV"/>
+        <img src="static/images/GazeboCar_simulation_init.png" alt="Gazebo AGV" style="display: block; margin-left: auto; margin-right: auto;"/>
         <h2 class="subtitle has-text-left">
          HiCRISP operates on both the Gazebo engine and real-world AGV platform. We command the vehicle to sequentially approach specific landmarks according to a predetermined order. Action failure arises when obstacles obstruct the intended trajectory. Planning failure occur if the vehicle erroneously navigates towards an incorrect landmark. HiCRISP addresses these failures by providing corresponding corrective actions and rectifying the issues.
         </h2>
